@@ -6,4 +6,4 @@
 
 # Untuk menjalankan aplikasi
 
-Ketikkan "streamlit run main.py" pada terminal
+Ketikkan "streamlit run uas_12220106.py" pada terminal
