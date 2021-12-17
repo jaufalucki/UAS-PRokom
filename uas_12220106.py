@@ -169,10 +169,10 @@ def informasi_no4():
     value_highest_alltime = df2_sum["produksi"].max()
     non_zero = df2_sum.loc[(df2_sum["produksi"] > 0)]
     value_lowest_alltime = non_zero["produksi"].min()
-    st.title("** 4. Informasi negara dengan produksi terbesar, terkecil dan 0 **")
+    st.title("** 4. Informasi negara dengan produksi terbesar, terkecil, dan 0 **")
     # Keseluruhan
     st.markdown("""---""")
-    st.subheader("** a. Negara dengan produksi minyak terbesar, terkecil dan 0 secara keseluruhan **")
+    st.subheader("** a. Negara dengan produksi minyak terbesar, terkecil, dan 0 secara keseluruhan **")
     n_highest = df2_sum.loc[(df2_sum["produksi"] == value_highest_alltime)]
     n_lowest = df2_sum.loc[(df2_sum["produksi"] == value_lowest_alltime)]
     n_zero = df2_sum.loc[(df2_sum["produksi"] == 0)]
@@ -199,7 +199,7 @@ def informasi_no4():
 
     st.markdown("""---""")
     # Pada T tahun
-    st.subheader("** b. Negara dengan produksi minyak terbesar, terkecil dan 0 berdasarkan tahun **")
+    st.subheader("** b. Negara dengan produksi minyak terbesar, terkecil, dan 0 berdasarkan tahun **")
     tahun = st.selectbox(
         "Silahkan pilih tahun yang ingin ditampilkan: ",
         options=df["tahun"].unique(),
